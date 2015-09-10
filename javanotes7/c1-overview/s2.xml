@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section id="overview.2" title="Asynchronous Events: Polling Loops and Interrupts" shorttitle="Asynchronous Events">
+    
+<p><start><big>C</big>PU menghabiskan sebagian besar waktunya</start> untuk mengambil
+instruksi dari memori dan mengeksekusinya. Tetapi, CPU dan memori utama hanyalah
+dua diantara banyak komponen pada sistem komputer nyata. Sistem
+yang lengkap dari komputer mencakup beberapa perangkat seperti:</p>
+
+<ul>
+<li>H<newword>ard disk</newword> atau <newword>solid state drive</newword> untuk menyimpan berkas program dan
+data. (Perlu diingat bahwa memori utama hanya memegang sejumlah informasi
+yang relatif kecil dan memegangnya selama sumber daya tetap nyala.
+Hard disk atau solid state drive digunakan sebagai tempat penyimpanan permanen untuk jumlah informasi
+yang lebih besar, tetapi program harus dimuat dari disk ke memori utama sebelum
+program tersebut dieksekusi.  Hard disk menyimpan data pada piringan magnetis yang
+berputar, sedangan solid state drive merupakan perangkat elektronis murni tanpa
+bagian yang bergerak.)</li>
+
+<li><newword>Keyboard</newword> dan <newword>mouse</newword> untuk masukan pengguna.</li>
+
+<li><newword>Monitor</newword> dan <newword>printer</newword> yang digunakan untuk menampilkan
+keluaran komputer.</li>
+
+<li><newword>Perangkat keluaran audio</newword> yang memungkinan komputer untuk
+mengeluarkan suara.</li>
+
+<li><newword>Antarmuka jaringan</newword> yang memungkinkan komputer untuk
+berkomunikasi dengan komputer lainnya yang terhubung dengannya pada sebuah jaringan,
+baik secara nirkabel atau dengan kabel.</li>
+
+<li><newword>Scanner</newword> yang mengubah gambar ke kode dalam bilangan
+biner yang dapat disimpan dan diolah oleh komputer.</li>
+</ul>
+
+<p>Daftar perangkat ini bisa ditambahkan lagi, ini karena sistem komputer dibangun
+sedemikian rupa sehingga dapat dilakukan penambahan perangkat baru dengan mudah.
+Terkadang CPU harus berkomunikasi dan mengontrol perangkat-perangkat tersebut. 
+CPU hanya bisa melakukan hal ini dengan mengeksekusi instruksi bahasa mesin
+(hanya inilah yang bisa dilakukan CPU, titik). Cara kerjanya adalah untuk setiap
+perangkat di sistem terdapat sebuah <newword>driver perangkat</newword>, yang
+terdiri dari perangkat lunak yang akan dieksekusi CPU saat sedang
+berurusan dengan perangkat tersebut. Pemasangan perangkat baru pada sistem
+umumnya terdiri dari dari langkah: menghubungkan perangkat secara fisik ke
+komputer, dan memasang perangkat lunak driver dari perangkat.
+Tanpa driver dari perangkat, perangkat fisik saja akan tidak berguna, karena
+CPU tidak akan bisa berkomunikasi dengan perangkat tersebut.</p>
+
+<break/>
+
+<p>Sebuah sistem komputer yang terdiri dari banyak perangkat biasanya
+diorganisasikan dengan menggabungkan satu perangkat dengan perangkat lainnya ke
+satu atau lebih <newword>bus</newword>. Sebuah bus merupakan sebuah kumpulan
+kabel yang membawa berbagai macam informasi diantara perangkat-perangkat yang terhubung
+ke kabel-kabel tersebut. Kabel-kabel ini membawa data, alamat, dan sinyal kontrol.
+Sebuah alamat akan mengarahkan data ke perangkat tertentu dan kemungkinan ke sebuah
+register tertentu atau lokasi tertentu dari perangkat tersebut. Sinyal kontrol dapat digunakan
+, sebagai contoh, oleh sebuah perangkat untuk memberitahukan perangkat lain bahwa
+data telah tersedia di bus data untuk perangkatnya. Sebuah sistem komputer sederhana dapat di
+organisasikan sebagai berikut:</p>
+
+<img width="494" height="275" src="overview-fig2.png" alt="Diagram of a bus with attached devices" 
+         tex="overview-fig2.eps" texscale="0.8"/>
+
+
+<p>Saat ini, perangkat seperti keyboard, mouse, dan antarmuka jaringan dapat menghasilkan
+masukan yang perlu untuk diproses oleh CPU. Bagaiaman CPU mengetahui bahwa data telah ada?
+? Salah satu gagasan sederhana, yang tidak memuaskan, adalah
+CPU tetap memeriksa data yang masuk secara berulang-ulang. Saat CPU menemukan data, 
+ia memproses data tersebut. Metode ini disebut <newword>polling</newword>, 
+dikarenakan CPU menjajaki perangkat masukan secara berkala
+untuk mencari tahu apakah perangkat memiliki masukan data untuk dilaporkan.
+Sayangnya, meskipun polling sangat sederhana, metode ini juga sangat tidak efisien.
+CPU dapat menghabiskan banyak waktu hanya untuk menunggu masukan.</p>
+
+<p>Untuk menghindari ketidakefisienan ini, <newword>interupsi</newword> lebih 
+sering digunakan sebagai pengganti polling. Interupsi merupakan sinyal yang dikirimkan
+oleh perangkat lain ke CPU. CPU merespon sinyal interrupt dengan mengesampingkan apapun
+yang dilakukannya untuk merespon interupsi tersebut. Setelah CPU telah menangani
+interupsi tersebut, CPU akan kembali ke hal yang dilakukannya sebelum interupsi terjadi.
+Sebagai contoh, saat kamu menekan tombol di keyboard komputer maka sebuah interupsi keyboard
+dikirimkan ke CPU. CPU akan merespon sinyal tersebut dengan menginterupsi yang sedang dilakukannya,
+membaca tombol yang kamu tekan, memprosesnya, dan kembali ke pekerjaan yang dilakukan CPU
+sebelum kamu menekan tombol tersebut.</p>
+
+<p>Again, you should understand that this is a purely mechanical process: A
+device signals an interrupt simply by turning on a wire. The CPU is built so
+that when that wire is turned on, the CPU saves enough information about what it is
+currently doing so that it can return to the same state later. This information
+consists of the contents of important internal registers such as the program
+counter. Then the CPU jumps to some predetermined memory location and begins
+executing the instructions stored there. Those instructions make up an
+<newword>interrupt handler</newword> that does the processing
+necessary to respond to the interrupt. (This interrupt handler is part of the
+device driver software for the device that signaled the interrupt.) At the end
+of the interrupt handler is an instruction that tells the CPU to jump back to
+what it was doing; it does that by restoring its previously saved state.</p>
+
+<p>Interrupts allow the CPU to deal with <newword>asynchronous events</newword>. 
+In the regular fetch-and-execute cycle, things happen in a
+predetermined order; everything that happens is "synchronized" with everything
+else. Interrupts make it possible for the CPU to deal efficiently with events
+that happen "asynchronously," that is, at unpredictable times.</p>
+
+<p>As another example of how interrupts are used, consider what happens when
+the CPU needs to access data that is stored on a hard disk. The CPU can
+access data directly only if it is in main memory. Data on the disk has to be copied
+into memory before it can be accessed. Unfortunately, on the scale of speed at
+which the CPU operates, the disk drive is extremely slow. When the CPU needs
+data from the disk, it sends a signal to the disk drive telling it to locate
+the data and get it ready. (This signal is sent synchronously, under the
+control of a regular program.) Then, instead of just waiting the long and
+unpredictable amount of time that the disk drive will take to do this, the CPU goes
+on with some other task. When the disk drive has the data ready, it sends an
+interrupt signal to the CPU. The interrupt handler can then read the requested
+data.</p>
+
+<break/>
+
+<p>Now, you might have noticed that all this only makes sense if the CPU
+actually has several tasks to perform. If it has nothing better to do, it might
+as well spend its time polling for input or waiting for disk drive operations
+to complete. All modern computers use <newword>multitasking</newword>
+to perform several tasks at once. Some computers can be used by several people
+at once. Since the CPU is so fast, it can quickly switch its attention from one
+user to another, devoting a fraction of a second to each user in turn. This
+application of multitasking is called <newword>timesharing</newword>.
+But a modern personal computer with just a single user also uses multitasking. For
+example, the user might be typing a paper while a clock is continuously
+displaying the time and a file is being downloaded over the network.</p>
+
+<p>Each of the individual tasks that the CPU is working on is called a
+<newword>thread</newword>. (Or a <newword>process</newword>;
+there are technical differences between threads and
+processes, but they are not important here, since it is threads that
+are used in Java.)  Many CPUs can literally execute more than one thread
+simultaneously&mdash;such CPUs contain multiple "cores," each of which can
+run a thread&mdash;but there is always a limit on the number of threads
+that can be executed at the same time.  Since there are often more threads
+than can be executed simultaneously, the computer has to be able switch its
+attention from one thread to another, just as a timesharing computer
+switches its attention from one user to another.  In general, a 
+thread that is being executed will continue to run
+until one of several things happens:</p>
+
+<ul>
+<li>The thread might voluntarily <newword>yield</newword> control, to
+give other threads a chance to run.</li>
+
+<li>The thread might have to wait for some asynchronous event to occur. For
+example, the thread might request some data from the disk drive, or it might
+wait for the user to press a key. While it is waiting, the thread is said to be
+<newword>blocked</newword>, and other threads, if any, have a chance to run.
+When the event occurs, an interrupt will "wake up" the thread so that it can
+continue running.</li>
+
+<li>The thread might use up its allotted slice of time and be suspended to
+allow other threads to run. Not all computers can "forcibly" suspend a thread
+in this way; those that can are said to use <newword>preemptive multitasking</newword>. 
+To do preemptive multitasking, a computer needs a special
+timer device that generates an interrupt at regular intervals, such as 100
+times per second. When a timer interrupt occurs, the CPU has a chance to switch
+from one thread to another, whether the thread that is currently running likes
+it or not.  All modern desktop and laptop computers, and even typical smartphones and tablets, 
+use preemptive multitasking.</li>
+</ul>
+
+<p>Ordinary users, and indeed ordinary programmers, have no need to deal with
+interrupts and interrupt handlers. They can concentrate on the different tasks
+or threads that they want the computer to perform; the details of how the
+computer manages to get all those tasks done are not important to them. In
+fact, most users, and many programmers, can ignore threads and multitasking
+altogether. However, threads have become increasingly important as computers
+have become more powerful and as they have begun to make more use of
+multitasking and multiprocessing.  In fact, the ability to work with threads
+is fast becoming an essential job skill for programmers.
+Fortunately, Java has good support for threads, which
+ are built into the Java programming language as a
+fundamental programming concept.  Programming with threads will be covered
+in <localref href="threads"/>.</p>
+
+<p>Just as important in Java and in modern programming in general is the basic
+concept of asynchronous events. While programmers don't actually deal with
+interrupts directly, they do often find themselves writing <newword>event handlers</newword>, 
+which, like interrupt handlers, are called
+asynchronously when specific events occur. Such "event-driven programming" has
+a very different feel from the more traditional straight-through, synchronous
+programming. We will begin with the more traditional type of programming, which
+is still used for programming individual tasks, but we will return to threads
+and events later in the text, starting in <localref href="GUI1"/></p>
+
+<break/>
+
+<p>By the way, the software that does all the interrupt handling, handles
+communication with the user and with hardware devices, and controls which thread
+is allowed to run is called the
+<newword>operating system</newword>. The operating system is the
+basic, essential software without which a computer would not be able to
+function. Other programs, such as word processors and Web browsers,
+are dependent upon the operating system. Common operating systems include
+Linux, various versions of Windows, and Mac&nbsp;OS.</p>
+    
+    
+</section>

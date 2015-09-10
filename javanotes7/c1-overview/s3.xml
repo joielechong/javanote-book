@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section id="overview.3" title="Mesin Virtual Java">
+    
+<p><start><big>B</big>ahasa mesin mencakup</start> instruksi yang sangat sederhana
+yang dapat dieksekusi langsung oleh komputer CPU. Hampir semua program
+ditulis dalam <newword>bahasa pemrograman tingkat tinggi</newword> 
+seperti Java, Pascal, atau C++. Program yang ditulis dalam bahasa pemrograman
+tingkat tinggi tidaklah dapat dijalankan langsung di komputer. Karena itu, program
+harus diterjemahkan ke bahasa mesin. Penerjemahan ini dapat dilakukan oleh sebuah
+program yang disebut <newword>kompiler</newword>. Kompiler menerima
+program dengan bahasa pemrograman tingkat tinggi dan menterjemahkannya menjadi
+program dalam bahasa mesin yang dapat dieksekusi. Setelah proses terjemahan selesai,
+program dalam bahasa mesin tersebut dapat dijalankan berkali-kali, tetapi
+program tersebut hanya bisa dijalankan di komputer yang sesuai dengan jenis bahasa mesin 
+yang sama (hal ini dikarenakan setiap jenis komputer memiliki bahasa mesinnya
+tersendiri). Jika program akan dijalankan ke jenis komputer yang lain, maka program tersebut
+harus diterjemahkan ulang menggunakan kompilator yang berbeda, menjadi bahasa mesin
+yang sesuai dengan komputer tersebut.</p>
+
+<p>Ada alternatif lain dari mengkompilasi program dalam bahasa tingkat tinggi. Alih-alih
+menggunakan kompilator, yang menerjemahan program sekaligus dalam satu waktu, kita dapat menggunakan
+<newword>interpreter</newword>, yang menterjemahkan instruksi demi instruksi di saat
+dibutuhkan. Interpreter merupakan program yang bekerja mirip seperti CPU,
+dengan semacam siklus ambil-dan-eksekusinya. Dalam mengeksekusi program
+, interpreter berjalan dalam satu simpul yang didalamnya ia melakukan pembacaan satu
+instruksi dari program dalam satu waktu secara terus menerus, menentukan apa yang
+diperlukan untuk melakukan instruksi tersebut, dan kemudian melakukan perintah
+bahasa mesin yang sesuai dengan instruksi tersebut.
+so.</p>
+
+<p>Salah satu kegunaan dari interpreter adalah untuk mengeksekusi program dalam 
+bahasa tingkat tinggi. Sebagai contoh, bahasa pemrograman Lisp biasanya dieksekusi
+oleh interpreter daripada kompilator. Selain itu, interpreter
+memiliki tujuan lain: interpreter dapat memampukan kita untuk menggunakan sebuah
+program dalam bahasa mesin yang ditujukan untuk komputer jenis tertentu ke
+jenis komputer yang berbeda. Sebagai contoh, ada sebuah program yang disebut 
+"Virtual PC" yang berjalan di komputer Mac&nbsp;OS. Virtual PC merupakan interpreter
+yang mengeksekusi program dalam bahasa mesin yang ditulis untuk komputer klon IBM-PC. 
+Jika kita menjalankan Virtual PC di Mac&nbsp;OS, kita dapat menjalankan program PC apa pun,
+termasuk program yang ditulis untuk Windows.(Sayangnya, program PC akan berjalan jauh
+lebih lambat dari klon IBM yang sebenarnya. Masalahnya dikarenakan Virtual PC
+mengeksekusi beberapa instruksi bahasa mesin Mac&nbsp;OS untuk setiap instruksi
+bahasa mesin PC di dalam program yang ditafsirkannya. Program yang dikompilasi secara
+inheren lebih cepat dari program yang ditafsirkan .)</p>
+
+<break/>
+
+<p>Para perancang Java memilih untuk menggunakan gabungan dari kompilasi dan interpretasi.
+Program yang ditulis di Java dikompilasi ke bahasa mesin, tetapi ke dalam bahasa mesin
+dari komputer yang tidak ada. Komputer "Virtual" ini dikenal sebagai 
+<newword>Java Virtual Machine</newword> atau JVM.
+Bahasa mesin dari Java Virtual Machine disebut <newword>bytecode Java</newword>.
+Tidak ada alasan yang membatasi bytecode Java hanya digunakan di komputer virtual daripada digunakan
+sebagai bahasa mesin di komputer nyata. Namun penggunaan mesin virtual merupakan
+salah satu nilai jual dari Java: dapat digunakan di <b>berbagai jenis</b> komputer. Yang
+dibutuhkan oleh komputer-komputer tersebut adalah sebuah interpreter untuk bytecode Java.
+Intepreter ini mensimulasikan JVM seperti PC Virtual mensimulasikan sebuah komputer nyata.
+(Istilah JVM juga berarti program intrepreter untuk bytecode Java yang melakukan simulasi,
+jadi kita mengartikan komputer memerlukan sebuah JVM untuk menjalankan program Java.
+Secara teknis, lebih tepat untuk mengatakan bahwa interpreter <i>mengimplementasikan</i>
+JVM daripada mengatakannya merupakan sebuah JVM.)</p>
+
+<p>Tentu saja dibutuhkan interpreter bytecode Java yang berbeda untuk tiap jenis
+komputer, tetapi setelah sebuah komputer memiliki interpreter bytecode Java, ia
+dapat menjalankan berbagai program bytecode Java. Dan program bytecode Java yang sama
+dapat dijalankan di berbagai komputer yang memiliki interpreter tersebut. Hal inilah
+yang menjadi fitur utama dari Java: satu program yang telah dikompilasi dapat
+dijalankan di berbagai tipe komputer tanpa perlu melakukan perubahan.</p>
+
+<img height="208" width="530" src="overview-fig3.png" tex="overview-fig3.eps" texscale="0.8" bordered="true"/>
+
+<p>Mungkin kamu bertanya mengapa menggunakan bytecode Java sebagai perantara?
+mengapa tidak membagikan saja program Java orisinilnya dan mempersilahkan tiap
+orang mengkompilasinya ke bahasa mesin dari komputer jenis apapun yang mereka
+miliki dan menjalankannya di situ?. Ada banyak alasannya. Yang pertama, kompiler
+harus mengerti Java, yang merupakan bahasa tingkat tinggi. Kompiler itu sendiri
+pun merupakan program yang kompleks. intrepreter bytecode Java, di sisi lain,
+merupakan program yang cukup sederhana. Sehingga mudah untuk membuat interpreter
+bytecode untuk jenis komputer baru; setelah interpreter berhasil dibangun, komputer
+tersebut dapat menjalankan program Java terkompilasi apapun. Jauh lebih sulit
+untuk membuat kompiler Java untuk komputer yang sama.</p>
+
+<p>Lebih lanjut lagi, banyak program Java yang dibuat agar dapat didownload melalui
+jaringan. Hal ini memunculkan masalah keamanan yang nyata: kamu tentu tidak mau
+mendownload dan menjalankan program yang akan merusak komputer atau berkasmu.
+Interpreter bytecode berperan sebagai sebuah pelindung antara kamu dan program yang
+kamu download. Kamu benar-benar menjalankan interpreter yang menjalankan program
+yang kamu download secara tidak langsung. Intepreter dan melindungimu dari bahaya
+potensial yang mungkin ada di dalam program tersebut.</p>
+
+<p> Saat dimana Java merupakan bahasa pemrograman baru, Java dikritik sebagai
+bahasa pemrograman yang lambat kinerjanya: Karena bytecode Java dijalankan
+oleh interpreter, di mana program bytecode Java tidak akan pernah berjalan
+secepat program yang dikompilasi ke dalam bahasa mesin aslinya (yakni bahasa
+mesin aktual dari komputer di mana program dijalankan)
+Tetapi masalah ini telah diatasi secara hampir menyeluruh dengan penggunaan
+<newword>kompiler just-in-time</newword> untuk menjalankan bytecode Java.
+Kompiler just-in-time akan menerjemahkan bytecode Java ke dalam bahasa mesin asli.
+Ia melakukannya di saat menjalankan program.  Sama halnya dengan interpreter
+normal, masukan dari kompiler just-in-time merupakan program bytecode Java,
+dan tugasnya adalah menjalankan program tersebut. Tetapi saat menjalankan program,
+ia juga menerjemahkan bagian-bagian dari program ke bahasa mesin. Bagian yang
+diterjemahkan dari program dapat dijalankan lebih cepat daripada dengan interpretasi.
+Karena sebagian dari program sering dieksekusi saat program bekerja, maka
+kompiler just-in-time dapat meningkatkan kecepatan dari keseluruhan waktu eksekusi
+secara signifikan.
+</p>
+
+<p>Perlu saya garisbawahi bahwa tidak ada hubungan yang khusus antara Java
+dan bytecode Java. Program yang ditulis dengan bahasa Java tentu saja dapat
+dikompilasi ke bahasa mesin dari komputer nyata. Dan program yang ditulis dengan
+bahasa lain dapat dikompilasi menjadi bytecode Java. Tetapi kombinasi dari Java
+dan bytecode Java lah yang independen terhadap platform, aman, dan kompatibel
+terhadap jaringan sekaligus memampukan kamu untuk memprogram dengan bahasa
+pemrograman tingkat tinggi berbasis objek.
+</p>
+
+<p>(Dalam beberapa tahun belakangan ini, telah menjadi hal yang lumrah untuk
+menciptakan bahasa pemrograman baru, atau versi dari bahasa lama, yang dapat
+dikompilasi menjadi bytecode Java.  Program bytecode Java yang telah dikompilasi
+tersebut kemudian dapat dieksekusi oleh JVM standar. Bahasa-bahasa baru yang
+telah dibangun secara khusus untuk JVM termasuk Groovy, Clojure, dan Processing.
+  Jython dan JRuby merupakan versi dari bahasa yang lebih lama yang ditujukan
+untuk JVM. Bahasa-bahasa ini memberikan kemungkinan untuk memanfaatkan keuntungan
+dari penggunaan JVM namun menghindari segi-segi teknis dari bahasa Java.
+  Kenyataannya, penggunaan bahasa lain dengan JVM menjadi cukup penting sehingga
+beberapa fitur telah ditambahkan ke JVM di Java Versi&nbsp;7 yang ditujukan
+untuk memberikan dukungan lebih baik bagi beberapa dari bahasa tersebut.)</p>
+
+<break/>
+
+<p>Saya juga perlu memberikan sedikit catatan bahwa bagian terberat dari independen
+terhadap platform adalah menyediakan "Grafis Antarmuka Pengguna"&mdash;dengan window, 
+tombol-tombol, dan sebagainya.&mdash;yang akan bekerja pada semua platform yang
+mendukung Java. Kamu akan melihat masalah ini lebih lanjut di <localref href="overview.6"/>.</p>
+
+</section>

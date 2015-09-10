@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section id="overview.1" title="Cycle Ambil dan Eksekusi: Bahasa Mesin" shorttitle="Bahasa Mesin">
+
+<p><start><big>K</big>omputer merupakan sebuah sistem yang kompleks</start> yang terdiri dari banyak
+komponen yang berbeda. Tetapi di jantung&mdash;atau di otak, jika anda lebih suka&mdash; komputerlah
+terletak komponen utama yang melakukan proses komputasi yang sebenarnya. Komponen ini dinamakan
+<newword>Central Processing Unit</newword>, atau CPU. Di komputer desktop 
+modern, CPU merupakan sebuah "chip" yang berukuran satu inci persegi.
+Tugas dari CPU ini adalah untuk menjalankan program.</p>
+
+<p>Sebuah <newword>program</newword> merupakan daftar instruksi yang
+ditujukan untuk diikuti secara mekanis oleh komputer. Komputer dibangun
+untuk melaksanakan instruksi yang ditulis secara sederhana dalam bahasa
+yang disebut <newword>bahasa mesin</newword>. Tiap jenis komputer memiliki 
+bahasa mesin tersendiri, dimana komputer hanya dapat mengeksekusi langsung program
+jika program tersebut dibuat dengan bahasa mesin tersebut. (Komputer dapat menjalankan
+program yang ditulis dalam bahasa lain jika terlebih dahulu program tersebut diterjemahkan
+ke dalam bahasa mesinnya.)</p>
+
+<p>Saat CPU mengeksekusi sebuah program, program tersebut disimpan di
+<newword>memori utama</newword> komputer (dikenal juga sebagai RAM atau random access
+memory). Memori juga dapat memegang data yang digunakan atau diproses oleh program.
+Memori utama terdiri atas sebuah urutan dari
+<newword>lokasi</newword>. Lokasi ini diberi nomor dimana urutan nomor
+dari lokasi disebut sebagai <newword>alamat</newword>.
+Sebuah alamat memberikan sebuah cara untuk mengambil sebuah informasi
+tertentu dari jutaan informasi yang disimpan di memori.
+Saat CPU mengakses instruksi program atau data di lokasi tertentu, 
+ia akan mengirimkan alamat dari informasi sebagai sinyal ke memori;
+memori akan merespon dengan mengirimkan data yang terkandung di alamat tertentu
+tersebut. CPU juga dapat menyimpan informasi di memori dengan cara menentukan
+informasi yang akan disimpan dan alamat dari lokasi dimana data akan disimpan.</p>
+
+<p>Pada tingkatan bahasa mesin, operasi dari CPU cukup gamblang (walaupun sangat rumit secara rincinya). 
+CPU mengeksekusi program yang disimpan sebagai sebuah urutan bahasa mesin
+di memori utama. Hal ini dilakukan dengan berulang-ulang membaca, atau <newword>mengambil</newword>,
+sebuah instruksi dari memori dan kemudian mengerjakan, atau
+<newword>mengeksekusi</newword>, instruksi tersebut. Proses ini&mdash;mengambil
+sebuah instruksi, mengeksekusinya, mengambil instruksi lain, mengeksekusinya, dan begitu
+seterusnya&mdash;disebut sebagai <newword>ambil-dan-eksekusi cycle</newword>.
+Dengan sebuah pengecualian, yang akan dijelaskan di bagian <localref href="overview.2">selanjutnya</localref>, 
+Semua inilah yang dilakukan oleh CPU.</p>
+
+<p>Rincian dari cycle ambil-dan-eksekusi tidaklah begitu penting, namun
+ada beberapa hal dasar yang harus kamu tahu. CPU memiliki beberapa
+<newword>register</newword> internal, yang merupakan unit memori kecil yang
+memiliki kemampuan untuk mempertahankan sebuah nomor atau instruksi bahasa mesin. 
+CPU menggunakan salah satu dari register&mdash;<newword>program counter</newword>, atau PC&mdash;untuk
+merekam jejak dimana bagian program yang sedang dieksekusi. PC menyimpan
+alamat dari instruksi selanjutnya yang harus dikerjakan oleh CPU. Di permulaan
+dari ambil-dan-eksekusi cycle, CPU memeriksa PC untuk melihat instruksi mana
+yang harus diambil. Selama proses ambil-dan-eksekusi cycle, nomor dari
+PC diperbaharui untuk menunjukkan instruksi yang akan dieksekusi
+di cycle selanjutnya.(Biasanya, tidak selalu, merupakan instruksi yang 
+diikuti secara berurutan pada instruksi terkini di program.)</p>
+
+<break/>
+
+<p>Komputer mengeksekusi program bahasa mesin secara mekanis&mdash;tanpa
+mengetahui atau berpikir tentangnya&mdash;dikarenakan oleh cara penempatan
+fisik yang bersamaan. Ini memang bukan konsep yang mudah. Komputer merupakan sebuah mesin
+yang dibangun dari berjuta-juta saklar kecil yang disebut <newword>transistor</newword>, 
+yang dibentuk sedemikian rupa sehingga mereka bisa dihubungkan
+bersama dimana keluaran dari satu saklar dapat menyalakan atau
+mematikan saklar lainnya. Saat komputer melakukan komputasi, saklar-saklar ini menyalakan
+dan mematikan satu sama lain dengan pola yang ditentukan oleh bagaimana mereka dihubungkan
+dan oleh program yang lagi dieksekusi komputer.</p>
+
+<p>Instruksi bahasa mesin diekspresikan sebagai bilangan biner. Bilangan
+biner hanya terdiri dari dua digit kemungkinan, nol dan satu. Oleh karena itu,
+instruksi bahasa mesin hanyalah urutan dari nol dan satu. Tiap nol atau satu ini
+disebut <newword>bit</newword>. Jadi instruksi bahasa mesin hanya merupakan urutan
+dari nol dans atu. Tiap urutan tertentu mengkodekan instruksi tertentu. Data yang
+dimanipulasi oleh komputer juga dikodekan sebagain bilangan biner. Pada komputer
+modern, setiap lokasi memori menyimpan satu <newword>byte</newword>, yang merupakan
+urutan dari 8 buah bit. (Sebuah instruksi bahasa mesin atau sepotong data umumnya
+terdiri dari beberapa byte yang disimpan di lokasi memori yang berurutan.)
+</p>
+
+<p>Komputer dapat bekerja secara langsung
+dengan bilangan biner dikarenakan saklar-saklar dapat mewakilkan bilangan tersebut:
+nyalakan saklar sebagai satu; matikan saklar sebagai nol. Instruksi bahasa
+mesin disimpan di memori sebagai pola dari nyalakan dan matikan saklar.
+Saat instruksi bahasa mesin dimuat ke CPU, yang terjadi adalah
+saklar-saklar tertentu dinyalakan atau dimatikan sesuai pola yang dikodekan
+oleh instruksi tersebut. CPU dibangun untuk merespon pola ini
+dengan mengeksekusi instruksi yang dikodekan; Hal ini dapat dilakukan dengan mudah
+dikarenakan oleh susunan hubungan di dalam CPU yang merupakan satu kesatuan.</p>
+
+<p>Jadi, kamu harus memahami kerja komputer seperti ini: Memori utama
+memegang program bahasa mesin dan data. Dimana mereka dikodekan sebagai bilangan biner.
+CPU mengambil instruksi bahasa mesin dari memori satu demi satu dan
+mengeksekusinya. CPU melakukannya secara mekanis, tanpa memikirkan dan memahami
+apa yang dilakukannya&mdash;dan oleh karena itu program yang dieksekusinya harus
+sempurna, lengkap secara rincinya, dan benar hal ini dikarenakan CPU hanya bisa 
+mengeksekusi instruksi seperti apa yang tertulis. Inilah tampilan skematis dari
+tingkat-pertama pemahaman akan komputer:</p>
+
+<img width="486" height="295" src="overview_fig1.png" tex="overview_fig1.eps" texscale="0.8" alt="diagram dasar dari CPU dan RAM"/>
+
+
+
+</section>
