@@ -1,0 +1,10 @@
+execute = eksekusi
+disk drive = disk drive
+task = tugas
+fraction = pecahan
+turn = giliran
+request = meminta
+yield =menyerahkan
+blocked = diblok
+multiprocessing = multiproses
+covered = dibahas
