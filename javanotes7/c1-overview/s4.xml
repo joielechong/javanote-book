@@ -59,7 +59,7 @@ kondisi yang terjadi saat program sedang berjalan.</p>
 <p>Sebagai contoh, jika nilai dari varibel "modal" lebih besar dari 10000, maka "bunga" harus 
 dihitung dengan mengalikan 0.05 ke modal; jika tidak, maka bunga harus dihitung dengan mengalikan
 0.04 ke modal. Program memerlukan cara untuk menampilkan jenis keputusan seperti itu.
-Di Java, hal tersebut dapat diungkapkan dengan menggunakan "pernyataan if":</p>
+Di Java, hal tersebut dapat dinyatakan dengan menggunakan "pernyataan if":</p>
 
 <pre>if (modal &gt; 10000)
     bunga = modal * 0.05;
@@ -69,5 +69,52 @@ else
 <np>(Jangan kuatir mengenai rinciannya saat ini. Hanya ingat saja bahwa komputer dapat
 menguji kondisi dan menentukan apa yang dilakukan selanjutnya berdasarkan pengujian tersebut.)</np>
 
+<p>Loop digunakan saat tugas yang sama harus dilakukan lebih dari sekali. Sebagai
+contoh, jika kamu mau mencetak label alamat post untuk setiap nama pada daftar alamat pos
+kamu bisa mengatakan "Ambil urutan pertama dari nama dan alamat lalu cetak label; ambil
+urutan kedua nama dan alamat lalu cetak label;ambil urutan ketiga nama dan alamat lalu
+cetak label&dots;" Tetapi melakukan hal ini lama-kelamaan menjadi tidak masuk 
+akal&mdash;dan mungkin tidak bekerja sama sekali jika kamu tidak terlebih dahulu tahu 
+berapa banyak nama yang tertera. Apa yang hendak kamu ingin katakan seharusnya seperti 
+ini "Selama ada masih banyak nama yang harus diproses,ambil nama dan alamat 
+selanjutnya, lalu cetak label." Loop dapat digunakan dalam program untuk menyatakan
+perulangan seperti itu.</p>
+
+<break/>
+
+<p>Program yang besar sangatlah rumit sehingga hampir tidak mungkin untuk menulisnya
+jika tidak ada cara untuk memecahkannya menjadi "potongan-potongan" yang dapat dikelola.
+Subrutin merupakan salah satu cara untuk masalah ini. <newword>Subrutin<newword> terdiri
+dari instruksi untuk melakukan sebagian tugas, yang dikelompokkan bersama sebagai sebuah
+kesatuan yang kemudian diberi nama. Nama dari subrutin ini kemudian dapat digunakan sebagai
+pengganti dari keseluruhan instruksi tersebut. Sebagai contoh, misalkan salah satu tugas
+yang perlu dilakukan oleh programmu adalah menggambarkan rumah di layar. Kamu
+dapat memakai instruksi-instruksi yang diperlukan, menjadikan mereka ke dalam sebuah
+subrutin, dan memberikan subrutin tersebut nama yang cocok&mdash;seperti, "gambarRumah()".
+Sehingga di bagian manapun dari program yang perlu melakukan perintah penggambaran 
+rumah, kamu dapat melakukannya dengan sebuah perintah:</p>
+
+<pre>gambarRumah();</pre>
+
+<np>Hasil yang diberikan akan sama dengan menempatkan kumpulan instruksi 
+menggambar rumah di setiap bagian yang memerlukan instruksi-instruksi tersebut.</np>
+
+<p>Keuntungan dari hal ini bukan hanya mengurangi waktu untuk mengetiknya. Dengan
+mengatur program menjadi subrutin-subrutin akan membantumu mengatur bagaimana
+berpikir dan merancang program. Saat kamu menulis subrutin menggambar rumah, kamu
+dapat berkonsentrasi pada cara menggambar rumah tanpa perlu kuatir sejenak mengenai 
+bagian lain dari program. Dan setelah subrutin ditulis, kamu dapat melupakan rincian dari
+menggambar rumah&mdash;karena bagian tersebut sudah diselesaikan, karena kamu memiliki
+subrutin yang mengerjakan bagian itu. Subrutin menjadi seperti bagian bawaan dari
+bahasa yang dapat kamu pergunakan tanpa perlu mengetahui apa yang dilakukan di
+"bagian dalam" dari subrutin.</p>
+
+<break/>
+
+<p>Variabel, tipe, loop, percabangan, dan subrutin merupakan dasar dari yang kita
+sebut sebagai "pemrograman tradisional." Namun ketika program menjadi lebih besar,
+struktur tambahan diperlukan untuk mengatasi kerumitannya. Salah satu sarana
+yang paling efektif yang telah ditemukan adalah pemrograman berbasis objek, yang akan
+dibahas di bagian selanjutnya.</p>
 
 </section>
