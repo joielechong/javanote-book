@@ -105,8 +105,59 @@ dipahami, dan juga lebih tepat.</p>
 <p>Kamu harus menganggap objek "mengetahui" bagaimana menanggapi pesan tertentu.
 Objek yang berbeda mungkin akan menanggapi pesan yang sama dengan cara yang 
 berbeda. Sebagai contoh, pesan "cetak" akan memberikan hasil yang berbeda tergantung
-oleh objek yang mana yang dikirim pesan. Properti objek&mdash;dimana objek yang
+oleh objek yang mana yang dikirim pesan. Sifat objek ini&mdash;dimana objek yang
 berbeda dapat menanggapi pesan yang sama dengan cara yang berbeda&mdash;disebut
 sebagai <newword>polimorfisme</newword>.</p>
+
+<p>Merupakan hal yang lumrah jika objek-objek memiliki semacam "kemiripan" antara
+satu dengan yang lainnya. Objek yang mengandung tipe data yang sama dan menanggapi
+pesan yang sama dengan cara yang sama berada dalam <newword>kelas</newword> yang sama.
+(Dalam pemrograman yang sebenarnya, kelas bersifat primer yakni kelas dibuat kemudian
+satu atau lebih objek dibuat menggunakan kelas tersebut sebagai templatenya.) Tetapi
+objek juga bisa sama tanpa perlu berada di dalam kelas yang sama.</p>
+
+<p>Sebagai contoh, bayangkan sebuah program menggambar yang dapat digunakan untuk
+menggambar garis, persegi, oval, poligon, dan kurva di layar. Pada program tersebut,
+setiap objek yang tampak di layar dapat diwakilkan oleh objek perangkat lunak di program.
+akan ada lima kelas objek di program, masing-masing untuk tiap jenis objek tampak
+yang dapat digambar. Semua garis akan termasuk satu kelas, semua persegi termasuk ke
+dalam kelas yang lain, dan begitu seterusnya. Kelas-kelas ini jelas saling berkaitan;
+kesemuanya mewakili "objek yang dapat digambar". Mereka juga, sebagai contoh, mungkin
+dapat menanggapi pesan "gambar dirimu sendiri". Tingkat lain dari pengelompokkan, yang
+didasarkan pada data yang diperlukan untuk mewakili tiap jenis objek, yang kurang
+jelas, tetapi mungkin sangat berguna di program: Kita dapat mengelompokkan poligon
+dan kurva dalam satu kelompok sebagai "objek banyak titik," sementara garis, persegi,
+dan oval sebagai "objek dua titik." (Garis ditentukan oleh dua titik awal dan akhirnya,
+persegi ditentukan oleh sudutnya, dan oval ditentukan oleh dua sudut dari persegi
+yang mencakupnya. Persegi yang saya maksud di sini memiliki sisi vertikal dan horizontal,
+sehingga ia dapat ditentukan oleh dua titiknya; ini merupakan arti umum dari "persegi"
+dalam program menggambar.)
+Kita dapat membuat diagram dari hubungan tersebut sebagai berikut:</p>
+
+<img height="222" width="526" src="overview-fig4.png" tex="overview-fig4.eps" 
+      texscale="0.8" alt="Contoh hirarki kelas." bordered="true"/>
+
+<p>DapatDigambarObjek, BanyakTitikObjek, dan DuaTitikObjek merupakan kelas-kelas
+di program. BanyakTitikObjek dan DuaTitikObjek akan menjadi <newword>subkelas</newword>
+dari DapatDigambarObjek. Kelas Garis merupakan subkelas dari DuaTitikObjek dan (secara
+tidak langsung) DapatDigambarObjek. Subkelas dari kelas disebut <newword>mewarisi</newword>
+sifat-sifat dari kelas tersebut. Subkelas dapat menamba warisannya dan dapat juga "menimpa"
+(atau override) bagian dari pewarisan tersebut (dengan mendefinisikan tanggapan berbeda
+untu metode tertentu). Oleh karena itu, garis, persegi, dan yang lainnya <b>merupakan</b>
+objek yang dapat digambar, dan kelas DapatDigambarObjek menunjukkan hubungan tersebut.</p>
+
+<p>Pewarisan merupakan cara yang sangat bermanfaat untuk mengatur program. Hal ini juga
+berhubungan dengan masalah penggunaan kembali komponen perangkat lunak. Kelas merupakan
+komponen pokok dari penggunaan kembali perangkat lunak. Tidak hanya ia dapat digunakan
+secara langsung jika tepat cocok dengan program yang sedang kamu buat, bahkan jika ia
+hampir cocok kamu tetap dapat menggunakannya kembali dengan mendefinisikan sebuah subkelas
+dan melakukan perubahan kecil yang diperlukan untuk mengadaptasikannya sesuai dengan keperluanmu.</p>
+
+<p>Karena itu, OOP dimaksudkan untuk menjadi alat yang unggul untuk pengembangan
+program dan merupakan solusi parsial untuk masalah penggunaan kembali di perangkat
+lunak. Objek, kelas, dan pemrograman berbasis objek akan menjadi teman penting di
+keseluruhan teks buku ini. Kamu akan mulai menggunakan objek bawaan yang dimiliki
+oleh bahasa Java pada <localref href="basics">halaman selanjutnya</localref> dan
+di <localref href="OOP"/> kamu akan memulai membuat kelas dan objekmu sendiri.</p>
 
 </section>
