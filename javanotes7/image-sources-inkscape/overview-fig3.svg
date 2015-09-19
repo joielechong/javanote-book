@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="overview-fig3.svg"
    inkscape:export-filename="/home/eck/eclipse-workspace/javanotes7/overview/overview-fig3.png"
    inkscape:export-xdpi="90"
@@ -97,17 +97,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="375"
-     inkscape:cy="840"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="324.50056"
+     inkscape:cy="864.0212"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1055"
-     inkscape:window-height="903"
-     inkscape:window-x="543"
-     inkscape:window-y="62"
-     inkscape:window-maximized="0" />
+     inkscape:window-height="800"
+     inkscape:window-x="223"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="557,911"
+       orientation="1,0"
+       id="guide3375" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -116,7 +123,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -126,22 +133,26 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
-       x="42"
-       y="108.36218"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="36"
+       y="104.36218"
        id="text2985"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2987"
-         x="42"
-         y="108.36218">Java</tspan><tspan
+         x="36"
+         y="104.36218">Program</tspan><tspan
          sodipodi:role="line"
-         x="42"
-         y="128.36218"
-         id="tspan2989">Program</tspan></text>
+         x="36"
+         y="124.36218"
+         id="tspan3373">Java</tspan><tspan
+         sodipodi:role="line"
+         x="36"
+         y="144.36218"
+         id="tspan2989" /></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="311"
        y="98.362183"
        id="text2991"
@@ -149,7 +160,7 @@
          sodipodi:role="line"
          id="tspan2993"
          x="311"
-         y="98.362183">Java</tspan><tspan
+         y="98.362183">Program</tspan><tspan
          sodipodi:role="line"
          x="311"
          y="118.36218"
@@ -157,10 +168,10 @@
          sodipodi:role="line"
          x="311"
          y="138.36218"
-         id="tspan2997">Program</tspan></text>
+         id="tspan2997">Java</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="172.71988"
        y="116.54618"
        id="text2999"
@@ -168,7 +179,7 @@
          sodipodi:role="line"
          id="tspan3001"
          x="172.71988"
-         y="116.54618">Compiler</tspan></text>
+         y="116.54618">Kompiler</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3048"
@@ -183,76 +194,78 @@
          sodipodi:linespacing="125%"
          id="text3003"
          y="85.92218"
-         x="494"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+         x="502"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="85.92218"
-           x="494"
+           x="502"
            id="tspan3005"
-           sodipodi:role="line">Java Interperter</tspan><tspan
+           sodipodi:role="line">Interperter Java</tspan><tspan
            id="tspan3007"
            y="105.92218"
-           x="494"
-           sodipodi:role="line">for Windows</tspan></text>
+           x="502"
+           sodipodi:role="line">untuk Windows</tspan></text>
       <rect
-         y="66.362183"
-         x="431.99997"
-         height="46"
-         width="126"
+         y="66.422829"
+         x="432.06061"
+         height="45.878704"
+         width="142.12135"
          id="rect3048-1"
-         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:none;stroke:#000000;stroke-width:2.12129474;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
        id="g3875"
-       transform="translate(-24,17)">
+       transform="matrix(1.0101069,0,0,0.99977482,-28.442377,17.04039)">
       <text
          sodipodi:linespacing="125%"
          id="text3003-7"
-         y="175.01018"
-         x="502.96786"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
-         xml:space="preserve"><tspan
-           y="175.01018"
-           x="502.96786"
+         y="174.29604"
+         x="508.54349"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.9347105px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"
+         transform="scale(0.99591941,1.0040973)"><tspan
+           y="174.29604"
+           x="508.54349"
            id="tspan3005-6"
-           sodipodi:role="line">Java Interperter</tspan><tspan
+           sodipodi:role="line">Interperter Java</tspan><tspan
            id="tspan3044"
-           y="195.01018"
-           x="502.96786"
-           sodipodi:role="line">for Linux</tspan></text>
+           y="194.21442"
+           x="508.54349"
+           sodipodi:role="line">untuk Linux</tspan></text>
       <rect
-         y="156.36218"
-         x="440"
-         height="46"
-         width="126"
+         y="156.41103"
+         x="440.04883"
+         height="45.902325"
+         width="138.90233"
          id="rect3048-1-7"
-         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:none;stroke:#000000;stroke-width:2.09767365;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
        id="g3863"
-       transform="translate(-12,24)">
+       transform="matrix(1.0708878,0,0,0.99851868,-42.305896,24.018312)">
       <text
          sodipodi:linespacing="125%"
          id="text3003-8"
-         y="8.0101824"
-         x="490.96786"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
-         xml:space="preserve"><tspan
-           y="8.0101824"
-           x="490.96786"
+         y="7.6678004"
+         x="513.38312"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.31610584px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"
+         transform="scale(0.95725658,1.044652)"><tspan
+           y="7.6678004"
+           x="513.38312"
            id="tspan3005-2"
-           sodipodi:role="line">Java Interperter</tspan><tspan
+           sodipodi:role="line">Interperter Java</tspan><tspan
            id="tspan3007-1"
-           y="28.010181"
-           x="490.96786"
-           sodipodi:role="line">for Mac OS</tspan></text>
+           y="26.812933"
+           x="513.38312"
+           sodipodi:role="line">untuk Mac OS</tspan></text>
       <rect
-         y="-10.637817"
-         x="428"
-         height="46"
-         width="126"
+         y="-10.619349"
+         x="428.01846"
+         height="45.963062"
+         width="130.63211"
          id="rect3048-1-70"
-         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:none;stroke:#000000;stroke-width:2.03561306;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
@@ -261,8 +274,8 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
-       d="m 218.26344,110.39101 53,0"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 216.26344,110.39101 53,0"
        id="path3881-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
