@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="overview-fig1.svg"
    inkscape:export-filename="/home/eck/Desktop/overview-fig1.png"
    inkscape:export-xdpi="90"
@@ -95,19 +95,29 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="354.71628"
-     inkscape:cy="810"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="379.79037"
+     inkscape:cy="909.82034"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
      inkscape:snap-grids="true"
-     inkscape:window-width="1055"
-     inkscape:window-height="903"
-     inkscape:window-x="543"
-     inkscape:window-y="62"
-     inkscape:window-maximized="0"
-     inkscape:snap-nodes="true" />
+     inkscape:window-width="1280"
+     inkscape:window-height="779"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-nodes="true"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="398.10112,1028.1333"
+       orientation="1,0"
+       id="guide3421" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3423" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -139,7 +149,7 @@
        id="g4102">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096"
@@ -147,21 +157,21 @@
            sodipodi:role="line"
            id="tspan4098"
            x="32.741211"
-           y="161.36218">10001010  (Location 0)</tspan></text>
+           y="161.36218">10001010  (Lokasi 0)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,-77.449951)"
        id="g4102-5">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-7"
@@ -169,21 +179,21 @@
            sodipodi:role="line"
            id="tspan4098-9"
            x="32.741211"
-           y="161.36218">00110100  (Location 1)</tspan></text>
+           y="161.36218">00110100  (Lokasi 1)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-2"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,-47.900024)"
        id="g4102-6">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-4"
@@ -191,21 +201,21 @@
            sodipodi:role="line"
            id="tspan4098-3"
            x="32.741211"
-           y="161.36218">01110111  (Location 2)</tspan></text>
+           y="161.36218">01110111  (Lokasi 2)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-8"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,-18.349976)"
        id="g4102-3">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-6"
@@ -213,21 +223,21 @@
            sodipodi:role="line"
            id="tspan4098-5"
            x="32.741211"
-           y="161.36218">10100100  (Location 3)</tspan></text>
+           y="161.36218">10100100  (Lokasi 3)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-6"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,11.200012)"
        id="g4102-7">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-8"
@@ -235,21 +245,21 @@
            sodipodi:role="line"
            id="tspan4098-4"
            x="32.741211"
-           y="161.36218">11010010  (Location 4)</tspan></text>
+           y="161.36218">11010010  (Lokasi 4)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-5"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,40.75)"
        id="g4102-67">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-80"
@@ -257,21 +267,21 @@
            sodipodi:role="line"
            id="tspan4098-35"
            x="32.741211"
-           y="161.36218">10000110  (Location 5)</tspan></text>
+           y="161.36218">10000110  (Lokasi 5)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811761;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-23"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01805"
+         height="28.836193"
+         x="28.081907"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,70.299988)"
        id="g4102-39">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-0"
@@ -279,21 +289,21 @@
            sodipodi:role="line"
            id="tspan4098-2"
            x="32.741211"
-           y="161.36218">01001111  (Location 6)</tspan></text>
+           y="161.36218">01001111  (Lokasi 6)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-83"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,99.849976)"
        id="g4102-69">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-9"
@@ -301,21 +311,21 @@
            sodipodi:role="line"
            id="tspan4098-50"
            x="32.741211"
-           y="161.36218">10100000  (Location 7)</tspan></text>
+           y="161.36218">10100000  (Lokasi 7)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32482123;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-4"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="108.78976"
+         height="28.839491"
+         x="28.080257"
+         y="140.44244" />
     </g>
     <g
        transform="translate(31.211426,129.40002)"
        id="g4102-71">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-5"
@@ -323,21 +333,21 @@
            sodipodi:role="line"
            id="tspan4098-49"
            x="32.741211"
-           y="161.36218">00000010  (Location 8)</tspan></text>
+           y="161.36218">00000010  (Lokasi 8)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32482123;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-1"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="108.78976"
+         height="28.839493"
+         x="28.080257"
+         y="140.44244" />
     </g>
     <g
        transform="translate(31.211426,158.95001)"
        id="g4102-0">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-76"
@@ -345,21 +355,21 @@
            sodipodi:role="line"
            id="tspan4098-0"
            x="32.741211"
-           y="161.36218">10100010  (Location 9)</tspan></text>
+           y="161.36218">10100010  (Lokasi 9)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32811737;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-0"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="109.01806"
+         height="28.836193"
+         x="28.081905"
+         y="140.44409" />
     </g>
     <g
        transform="translate(31.211426,188.5)"
        id="g4102-62">
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          x="32.741211"
          y="161.36218"
          id="text4096-53"
@@ -367,14 +377,14 @@
            sodipodi:role="line"
            id="tspan4098-8"
            x="32.741211"
-           y="161.36218">00010100  (Location 10)</tspan></text>
+           y="161.36218">00010100  (Lokasi 10)</tspan></text>
       <rect
-         style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="fill:none;stroke:#000000;stroke-width:3.32413793;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4100-44"
-         width="98"
-         height="29"
-         x="28"
-         y="140.36218" />
+         width="108.74249"
+         height="28.840174"
+         x="28.079914"
+         y="140.44209" />
     </g>
     <path
        inkscape:connector-curvature="0"
@@ -384,29 +394,29 @@
     <path
        inkscape:connector-curvature="0"
        id="path4251-1"
-       d="m 157.25,357.86218 c 0.5,77 0.5,77 0.5,77"
-       style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 168.15232,358.42187 c 0.5,77 0.5,77 0.5,77"
+       style="fill:none;stroke:#000000;stroke-width:3.16440821;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        sodipodi:linespacing="50%"
        id="text4271"
        y="382.36218"
-       x="105"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:50%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="114.48813"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:50%;font-family:Serif;-inkscape-font-specification:Serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          style="font-size:40px"
          y="382.36218"
-         x="105"
+         x="114.48813"
          id="tspan4273"
          sodipodi:role="line">.</tspan><tspan
          style="font-size:40px"
          id="tspan4275"
          y="402.36218"
-         x="105"
+         x="114.48813"
          sodipodi:role="line">.</tspan><tspan
          style="font-size:40px"
          id="tspan4277"
          y="422.36218"
-         x="105"
+         x="114.48813"
          sodipodi:role="line">.</tspan></text>
   </g>
   <rect
@@ -418,7 +428,7 @@
      y="62.559586" />
   <text
      xml:space="preserve"
-     style="font-size:12.64059448px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.64059448px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
      x="230.61693"
      y="85.978287"
      id="text4335"
@@ -427,10 +437,10 @@
        sodipodi:role="line"
        id="tspan4337"
        x="230.61693"
-       y="85.978287">Data to Memory</tspan></text>
+       y="85.978287">Data ke Memori</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:12.64059448px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.64059448px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
      x="264.9465"
      y="125.92885"
      id="text4335-5"
@@ -439,23 +449,23 @@
        sodipodi:role="line"
        id="tspan4337-0"
        x="264.9465"
-       y="125.92885">Data from Memory</tspan></text>
+       y="125.92885">Data dari Memori</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:12.64059448px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.64059448px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
      x="247.24968"
      y="212.51692"
      id="text4335-4"
      sodipodi:linespacing="125%"
      transform="scale(1.000537,0.99946329)"><tspan
        sodipodi:role="line"
-       id="tspan4337-3"
        x="247.24968"
-       y="212.51692">Address for</tspan><tspan
+       y="212.51692"
+       id="tspan4369">Alamat untuk</tspan><tspan
        sodipodi:role="line"
        x="247.24968"
        y="228.31766"
-       id="tspan4369">reading/writing</tspan><tspan
+       id="tspan3419">membaca/menulis</tspan><tspan
        sodipodi:role="line"
        x="247.24968"
        y="244.11841"
@@ -494,23 +504,23 @@
        id="tspan5061">counter:</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:12.64059448px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
-     x="108.63519"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.64059448px;line-height:125%;font-family:Serif;-inkscape-font-specification:Serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+     x="104.63734"
      y="215.54437"
      id="text5063"
      sodipodi:linespacing="125%"
      transform="scale(1.000537,0.99946329)"><tspan
        sodipodi:role="line"
        id="tspan5065"
-       x="108.63519"
+       x="104.63734"
        y="215.54437">0010110111001000</tspan></text>
   <rect
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     style="fill:none;stroke:#000000;stroke-width:2.10663271;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="rect5067"
-     width="120.7825"
-     height="17.687334"
-     x="48.618454"
-     y="202.16319" />
+     width="134.81801"
+     height="17.5807"
+     x="36.772278"
+     y="202.21652" />
   <text
      xml:space="preserve"
      style="font-size:35.39366531px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -525,7 +535,7 @@
        y="135.90863">CPU</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:17.69683266px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.69683266px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
      x="359.11896"
      y="25.436131"
      id="text4335-8"
@@ -534,5 +544,5 @@
        sodipodi:role="line"
        id="tspan4337-1"
        x="359.11896"
-       y="25.436131">Memory</tspan></text>
+       y="25.436131">Memori</tspan></text>
 </svg>
