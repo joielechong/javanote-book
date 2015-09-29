@@ -1,5 +1,7 @@
 execute = eksekusi
 disk drive = disk drive
+design=rancangan
+contributing=berkontribusi
 task = tugas
 fraction = pecahan
 turn = giliran
@@ -13,6 +15,19 @@ tools=sarana
 built-in=bawaan
 information hiding=penyembunyian informasi
 represented = disajikan
+represent=mewakili
 state = keadaan
 message=pesan
 respon=menanggapi
+respond=menanggapi
+obviously=dengan jelas
+property=sifat
+Nevertheless=oleh karena itu
+ultimate=pokok
+tell=telling=memberitahukan
+deliberate=disengaja
+implemented=diimplementasikan
+detail=rincian
+behaviors=perilaku
+by the way=ngomong-ngomong
+

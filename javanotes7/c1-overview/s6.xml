@@ -3,108 +3,109 @@
 
 <section id="overview.6" title="The Modern User Interface">
 
-<p><start><big>W</big>hen computers were first introduced</start>, ordinary
-people&mdash;including most programmers&mdash;couldn't get near them. They were
-locked up in rooms with white-coated attendants who would take your programs
-and data, feed them to the computer, and return the computer's response some
-time later. When timesharing&mdash;where the computer switches its attention
-rapidly from one person to another&mdash;was invented in the 1960s, it became
-possible for several people to interact directly with the computer at the same
-time. On a timesharing system, users sit at "terminals" where they type
-commands to the computer, and the computer types back its response. Early
-personal computers also used typed commands and responses, except that there
-was only one person involved at a time. This type of interaction between a user
-and a computer is called a <newword>command-line interface</newword>.</p>
+<p><start><bigK</big>etika komputer pertama kali diperkenalkan</start>, orang-orang
+biasa&mdash;termasuk kebanyakan programmer&mdash;tidak dapat mendekatinya. Komputer ini
+diletakkan di ruangan tertutup dimana petugas berpakaian putih menjaga akan menerima
+program dan datamu, memasukkannya ke komputer, dan memberikan hasil 
+and data, feed them to the computer, dan memberikan kamu kembali hasil dari respon
+komputer beberapa waktu kemudian. Ketika timesharing&mdash;dimana komputer membagi 
+perhatiannya secara cepat dari satu orang ke orang lainnya&mdash;ditemukan pada tahun 
+1960an, beberapa orang dimungkinkan untuk berinteraksi secara langsung dengan komputer
+pada saat yang bersamaan. Pada sistem timesharing, pengguna duduk di "terminal" dimana
+mereka mengetikkan perintah ke komputer, dan komputer menampilkan kembali ketikan 
+responsnya. Komputer personal awal juga memakai perintah dan respon ketikan, hanya saja
+cuma satu orang yang bekerja pada satu waktu. Jenis interaksi antar pengguna dan komputer
+ini disebut <newword>antarmuka command-line</newword>.</p>
 
-<p>Today, of course, most people interact with computers in a completely
-different way. They use a <newword>Graphical User Interface</newword>, 
-or GUI. The computer draws interface <newword>components</newword> on the
-screen. The components include things like windows, scroll bars, menus,
-buttons, and icons. Usually, a <newword>mouse</newword> is used to
-manipulate such components or, on "touchscreens," your fingers.
-Assuming that you have not just been teleported in
-from the 1970s, you are no doubt already familiar with the basics of graphical user
-interfaces!</p>
+<p>Tentu saja sekarang ini kebanyakan orang berinteraksi dengan komputer dalam cara yang
+sangat berbeda. Mereka menggunakan <newword>Antarmuka Pengguna Grafis</newword> (dalam
+pemrograman lebih dikenal dengan sebutan <newword>Graphical User Interface</newword>), 
+atau GUI. Komputer menampilkan <newword>komponen</newword> antarmuka pada layar. Komponen-komponen
+in mencakup window, scroll bar, menu, tombol, dan ikon. Biasanya, sebuah <newword>mouse</newword> digunakan
+untuk berinteraksi dengan komponen-komponen tersebut atau menggunakan jarimu pada "layar sentuh".
+Dengan menganggap kamu bukan baru-baru saja teleportasi dari tahun 1970an, kamu dipastikan
+sudah kenal dengan dasar dari GUI!</p>
 
-<p>A lot of GUI interface components have become fairly standard. That is, they
-have similar appearance and behavior on many different computer platforms
-including Mac&nbsp;OS, Windows, and Linux. Java programs,
-which are supposed to run on many different platforms without modification to
-the program, can use all the standard GUI components. They might vary a little in
-appearance from platform to platform, but their functionality should be
-identical on any computer on which the program runs.</p>
+<p>Banyak komponen antarmuka GUI yang telah menjadi standar. Dimana mereka memiliki
+tampilan dan sifat yang sama di platform komputer yang berbeda, termasuk
+Mac&nbsp;OS, Windows, dan Linux. Program Java,
+yang seharusnya berjalan pada berbagai platform tanpa mengubah programnya, dapat
+menggunakan semua komponen standar GUI. Mereka mungkin terlihat berbeda di tiap
+platform, tetapi fungsionalitasnya akan sama pada tiap komputer dimana program
+tersebut berjalan.</p>
 
-<p>Shown below is an image of a very simple Java program that demonstrates
-a few standard GUI interface components.  When the program is run, a window
-similar to the picture shown here will open on the computer screen.
-There are four components in the window with which the user can interact: 
-a button, a checkbox, a text field, and
-a pop-up menu. These components are labeled. There are a few other components
-in the window. The labels themselves are components (even though you can't
-interact with them). The right half of the window is a text area component,
-which can display multiple lines of text. A&nbsp;scrollbar component appears
-alongside the text area when the number of lines of text becomes larger
-than will fit in the text area.  And in fact, in Java terminology, the
-whole window is itself considered to be a "component."</p>
+<p>Di bawah ini merupakan tampilan sebuah program Java sederhana yang menunjukkan 
+beberapa komponen antarmuka standar dari GUI. Saat program berjalan, sebuah
+window yang serupa dengan gambar yang ditunjukkan di sini akan terbuka di
+layar komputer. Ada empat komponen yang ada pada window yang dapat berinteraksi
+dengan pengguna: sebuah tombol, checkbox, kolom teks, dan menu pop-up. Komponen-
+komponen tersebut diberi label. Ada beberapa komponen lainnya di window.
+Label-label pun termasuk dalam komponen GUI (meskipun kamu tidak dapat berinteraksi
+dengannya). Bagian sebelah kanan dari window merupakan komponen teks area yang
+dapat menampilkan banyak baris teks. Sebuah komponen scrollbar muncul 
+di sepanjang bagian teks area saat jumlah baris teks lebih banyak dari
+jumlah baris yang muat di teks area. Dan pada kenyataannya, dalam terminologi
+Java, window keseluruhan itu sendiri disebut sebagai "komponen."</p>
 
 <img src="overview-GUIDemo.png" tex="overview-GUIDemo.eps" height="180" width="577" 
-    alt="Screenshot from GUIDemo demonstrates some basic GUI components"
+    alt="Screenshot dari GUIDemo yang menampilkan beberapa komponen dasar GUI"
     texscale="0.5"/>
     
-<np>(If you would like to run this program, the source code, <sourceref href="GUIDemo.java"/>,
-as well as a compiled program, <jarref href="GUIDemo.jar"/>, are available on line.  For more information on using
-this and other examples from this textbook, see <localref href="basics.6"/>.)</np>
+<np>(Jika kamu ingin menjalankan program ini, kode sumber, <sourceref href="GUIDemo.java"/>,
+juga program terkompilasinya, <jarref href="GUIDemo.jar"/>, tersedia secara on line.  Untuk informasi lebih lanjut dalam
+penggunaannya dan contoh lain dari buku teks ini, dapat dilihat di <localref href="basics.6"/>.)</np>
 
-<p>Now, Java actually has two complete sets of GUI components. One of these,
-the AWT or <newword>Abstract Windowing Toolkit</newword>, was
-available in the original version of Java. The other, which is known as
-<newword>Swing</newword>, was introduced in Java version 1.2,
-and is used in preference to the AWT in most modern Java programs.  The
-program that is shown above uses components that are part of Swing. 
+<p>Saat ini Java memiliki dua set lengkap dari komponen GUI. Salah satunya
+AWT atau <newword>Abstract Windowing Toolkit</newword>, tersedia di
+versi asli Java. Yang kedua, yang dikenal sebagai
+<newword>Swing</newword>, diperkenalkan di Java versi 1.2,
+digunakan lebih sering daripada AWT di kebanyakan program Java modern.  Program
+yang ditunjukkan di atas menggunakan komponen Swing.
 </p>
 
-<p>When a user interacts with GUI components,
-"events" are generated.  For example, clicking a push button generates an event, and pressing
-return while typing in a text field generates an event.
-Each time an
-event is generated, a message is sent to the program telling it that the event
-has occurred, and the program responds according to its program. In fact, a typical GUI
-program consists largely of "event handlers" that tell the program how to respond
-to various types of events. In this example, the program has been programmed
-to respond to each event by displaying a message in the text area.
-In a more realistic example, the event handlers would have more to do.</p>
+<p>Saat pengguna berinteraksi dengan komponen GUI, "event" akan dihasilkan.  Sebagai contoh,
+mengklik tombol akan menghasilkan sebuah event, dan menekan tombol keyboard "return" saat
+mengetik pada kolom teks akan menghasilkan event.
+Setiap saat sebuah
+event dihasilkan, sebuah pesan akan dikirimkan ke program yang memberitahukan bahwa sebuah
+event telah terjadi, dan program akan menanggapi sesuai dengan programnya sendiri. Dalam kenyataannya,
+program GUI umumnya sebagian besar mencakup "penangan event" (event handler) yang
+memberitahukan program bagaimana menanggapi berbagai macam event. Pada contoh ini,
+program telah diprogram untuk menanggapi masing-masing event dengan menampilkan sebuah
+pesan ke teks area. Pada contoh yang lebih realistis, event handler akan melakukan
+banyak hal lainnya.</p>
 
-<p>The use of the term "message" here is deliberate. Messages, as you saw in
-the <localref href="overview.5">previous&nbsp;section</localref>, are sent to objects. In fact, Java
-GUI components are implemented as objects. Java includes many predefined
-classes that represent various types of GUI components. Some of these classes
-are subclasses of others. Here is a diagram showing just a few of Swing's GUI classes
-and their relationships:</p>
+<p>Penggunaan istilah "pesan" di sini adalah disengaja. Pesan-pesan, seperti yang kamu lihat
+di <localref href="overview.5">bagian&nbsp;sebelumnya</localref>, dikirimkan ke objek. 
+Dan sebenarnya, komponen GUI Java diimplementasikan sebagai objek. Java mencakup
+banyak kelas-kelas yang telah ditetapkan sebelumnya yang mewakili bermacam-macam
+komponen GUI. Beberapa dari kelas ini merupakan subkelas dari kelas lainnya. Di bawah
+ini merupakan diagram yang menampilkan beberapa kelas GUI Swing dan hubungannya:</p>
 
 <img width="557" height="277" src="overview-fig5.png" tex="overview-fig5.eps" texscale="0.7" bordered="true"/>
 
-<p>Don't worry about the details for now, but try to get some feel about how
-object-oriented programming and inheritance are used here. Note that all the
-GUI classes are subclasses, directly or indirectly, of a class called
-<classname>JComponent</classname>, which represents general properties
-that are shared by all Swing components. In the diagram,
-two of the direct subclasses of <classname>JComponent</classname>
-themselves have subclasses. The classes <classname>JTextArea</classname> and
-<classname>JTextField</classname>, which have certain behaviors in common, are grouped
-together as subclasses of <classname>JTextComponent</classname>.
-Similarly <classname>JButton</classname> and <classname>JToggleButton</classname>
-are subclasses of <classname>JAbstractButton</classname>, which represents
-properties common to both buttons and checkboxes.  (<classname>JComboBox</classname>,
-by the way, is the Swing class that represents pop-up menus.)
+<p>Jangan kuatir tentang rinciannya saat ini, tetapi cobalah mendapatkan
+nuansa bagaimana pemrograman berorientasi objek dan pewarisan digunakan disini.
+Sebagai catatan, semua kelas GUI merupakan subkelas, baik secara langsung maupun
+tidak langsung, dari kelas yang disebut <classname>JComponent</classname>, yang
+mewakili sifat-sifat umum yang dimiliki oleh semua komponen Swing. Di diagram,
+dua dari subkelas langsung dari <classname>JComponent</classname>
+memiliki subkelas. Kelas <classname>JTextArea</classname> dan
+<classname>JTextField</classname>, yang memiliki perilaku tertentu yang sama, dikelompokkan
+bersama sebagai subkelas dari <classname>JTextComponent</classname>.
+Sama halnya pada <classname>JButton</classname> dan <classname>JToggleButton</classname>
+merupakan subkelas dari <classname>JAbstractButton</classname>, yang mewakili
+sifat umum dari tombol dan checkbox.  (Ngomong-ngomong, <classname>JComboBox</classname>
+merupakan kelas Swing yang mewakili menu pop-up.)
 </p>
 
-<p>Just from this brief discussion, perhaps you can see how GUI programming can
-make effective use of object-oriented design. In fact, GUIs, with their
-"visible objects," are probably a major factor contributing to the popularity
-of OOP.</p>
+<p>Dari diskusi singkat ini, mungkin kamu dapat melihat bagaimana pemrograman GUI
+membuat penggunaan rancangan berorientasi objek menjadi efektif. Dalam kenyataannya,
+GUI, dengan "objek tampaknya", merupakan faktor utama yang berkontribusi dalam
+popularitas OOP.</p>
 
-<p>Programming with GUI components and events is one of the most interesting
-aspects of Java. However, we will spend several chapters on the basics before
-returning to this topic in <localref href="GUI1"/>.</p>
+<p>pemrograman dengan komponen GUI dan event merupakan salah satu aspek yang
+paling menarik di Java. Tetapi kita akan menghabiskan beberapa bab membahas
+tentang dasar-dasar sebelum kembali ke topik ini pada <localref href="GUI1"/>.</p>
     
 </section>
